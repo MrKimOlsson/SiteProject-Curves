@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header id="header">
+        <div class="menu">
+            <div class="menu-btn">
+                <div class="menu-btn_burger"></div>
+                
+            </div>                
+
+            
+        </div>
+        <div class="lightBtnSection">
+            <button id="light-mode-btn" class=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 100-11 5.5 5.5 0 000 11zm0 1.5a7 7 0 100-14 7 7 0 000 14zm12-7a.75.75 0 01-.75.75h-2.5a.75.75 0 010-1.5h2.5A.75.75 0 0124 12zM4 12a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h2.5A.75.75 0 014 12zm16.485-8.485a.75.75 0 010 1.06l-1.768 1.768a.75.75 0 01-1.06-1.06l1.767-1.768a.75.75 0 011.061 0zM6.343 17.657a.75.75 0 010 1.06l-1.768 1.768a.75.75 0 11-1.06-1.06l1.767-1.768a.75.75 0 011.061 0zM12 0a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0V.75A.75.75 0 0112 0zm0 20a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0v-2.5A.75.75 0 0112 20zM3.515 3.515a.75.75 0 011.06 0l1.768 1.768a.75.75 0 11-1.06 1.06L3.515 4.575a.75.75 0 010-1.06zm14.142 14.142a.75.75 0 011.06 0l1.768 1.768a.75.75 0 01-1.06 1.06l-1.768-1.767a.75.75 0 010-1.061z"/></svg></button>
+            
+            <button id="dark-mode-btn" class="d-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black"><path fill-rule="evenodd" d="M16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1016.425 4.74c.05.413.075.833.075 1.259zm-1.732-2.04A9.08 9.08 0 0114.999 6a9 9 0 01-11.04 8.768l-.004-.002a9.367 9.367 0 01-.78-.218c-.393-.13-.8.21-.67.602a9.938 9.938 0 00.329.855l.004.01A10.002 10.002 0 0012 22a10.002 10.002 0 004.015-19.16l-.01-.005a9.745 9.745 0 00-.855-.328c-.392-.13-.732.276-.602.67a8.934 8.934 0 01.218.779l.002.005z"/></svg></button>
+            <!-- Sun -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path fill-rule="evenodd" d="M12 17.5a5.5 5.5 0 100-11 5.5 5.5 0 000 11zm0 1.5a7 7 0 100-14 7 7 0 000 14zm12-7a.75.75 0 01-.75.75h-2.5a.75.75 0 010-1.5h2.5A.75.75 0 0124 12zM4 12a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h2.5A.75.75 0 014 12zm16.485-8.485a.75.75 0 010 1.06l-1.768 1.768a.75.75 0 01-1.06-1.06l1.767-1.768a.75.75 0 011.061 0zM6.343 17.657a.75.75 0 010 1.06l-1.768 1.768a.75.75 0 11-1.06-1.06l1.767-1.768a.75.75 0 011.061 0zM12 0a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0V.75A.75.75 0 0112 0zm0 20a.75.75 0 01.75.75v2.5a.75.75 0 01-1.5 0v-2.5A.75.75 0 0112 20zM3.515 3.515a.75.75 0 011.06 0l1.768 1.768a.75.75 0 11-1.06 1.06L3.515 4.575a.75.75 0 010-1.06zm14.142 14.142a.75.75 0 011.06 0l1.768 1.768a.75.75 0 01-1.06 1.06l-1.768-1.767a.75.75 0 010-1.061z"/></svg> -->
+
+            <!-- Moon -->
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white"><path fill-rule="evenodd" d="M16.5 6c0 5.799-4.701 10.5-10.5 10.5-.426 0-.847-.026-1.26-.075A8.5 8.5 0 1016.425 4.74c.05.413.075.833.075 1.259zm-1.732-2.04A9.08 9.08 0 0114.999 6a9 9 0 01-11.04 8.768l-.004-.002a9.367 9.367 0 01-.78-.218c-.393-.13-.8.21-.67.602a9.938 9.938 0 00.329.855l.004.01A10.002 10.002 0 0012 22a10.002 10.002 0 004.015-19.16l-.01-.005a9.745 9.745 0 00-.855-.328c-.392-.13-.732.276-.602.67a8.934 8.934 0 01.218.779l.002.005z"/></svg> -->
+        </div>
+
+        <div id="logoImgLight" class=""><img src="img/logo1.black.png" alt="logotyp"></div>
+        <div id="logoImgDark" class=""><img src="img/logo1.png" alt="logotyp"></div>
+    </header>
+
+    <nav class="mobile-nav d-none">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    
+    <!-- Auto generate sections = sections*8>{Nice Curves})+p>lorem + tab -->
+
+    <!-- SECTION ONE -->
+    <section class="section" id="Home">
+        
+        <!-- UPPER SHAPES -->
+        <div class="topShape">
+            <svg data-name="Layer 1" viewBox="0 0 410 220" preserveAspectRatio="none">
+                <path d="m-3 50C24 55 45 39 22 0s223-1 391-1c-85 248-122-3-350 1-1 57-42 64-65 57" class="shape-fill"></path>
+                <defs>
+                    <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
+                        <stop offset="0%" stop-color="var(--color-stop)" />
+                        <stop offset="30%" stop-color="var(--color-stop)" />
+                        <stop offset="100%" stop-color="var(--color-bot)" />
+                    </linearGradient>
+                </defs>
+                  <g>
+                    <polygon class="gradient-bg"/>
+                  </g>
+            </svg>
+        </div>  
+        
+        <!-- INFO SECTION -->
+        <section class="infoSection">
+
+            <!--Text-->
+            <div>
+                <h1>Jag heter Kim Olsson!</h1>
+                <h3>Jag studerar till front-end utvecklare<h3>
+                <p>Men jag är inte bara programmerare.. Jag skulle även kalla mig kreatör, konstnär eller kanske skapare.
+                Oavsett medium eller format så vill jag skapa något vackert av allt jag rör.
+                Så när jag programmerar ser jag det som att jag skapar konst av koder.</p>              
+            </div>
+            <!--Bild till höger om texten-->
+            <div>
+                <div class="profilePic"><img class="shadow" src="img/KimOlsson2.jpg" alt="Bild på kreativ skapelse"></div>
+            </div>
+        </section>
+
+        <!-- LOWER SHAPES -->
+        <div class="shapeTwo">
+            <svg data-name="Layer 1" viewBox="0 0 1200 320" preserveAspectRatio="none">
+                <path d="m 600 112.77 c -431.37 0 -600 -47.25 -600 -105.54 c 0 83.9233 0 167.8467 0 251.77 c 397 117 935 -86 999 -129 v -122.77 c 1 58.29 -267.63 105.54 -599 105.54 z" class="shape-fill"></path>
+
+                <defs>
+                    <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
+                        <stop offset="0%" stop-color="var(--color-stop)" />
+                        <stop offset="30%" stop-color="var(--color-stop)" />
+                        <stop offset="100%" stop-color="var(--color-bot)" />
+                      </linearGradient>
+                  </defs>
+                  <g>
+                    <polygon class="gradient-bg"/>
+                  </g>
+            </svg>
+        </div>
+    </section>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- SECTION TWO -->
+<section class="section" id="About">
+        
+    
+    <!-- INFO SECTION -->
+    <section class="infoSectionTwo">
+
+        <!--Text-->
+        <div>
+            <h2>Vem är jag egentligen?</h2>
+                <p> Så länge jag kan minnas så har jag varit extremt nyfiken och velat förstå hur det mesta fungerar, 
+                    vilket har drivit mig till att ta reda på det och gjort att jag har lärt mig väldigt mycket, 
+                    men kanske ännu viktigare än så. Hur man hittar svar på sina frågor och hur man lär sig nya saker. <br>
+                    Jag har alltid sökt efter svar och skulle därför delvis beskriva mig som en sökare. Men jag har även haft ett brinnande intresse för att skapa vakra saker.
+                    Inte bara inom ett område, utom inom alla områden som intresserat mig. Allt från webbutveckling, grafisk formgivning, videoredigering och programmering till måleri, porträtt, ståltrådsträd, och paracord.
+                    Om jag inte behöver göra någonting för att fortsätta överleva, så behöver jag ändå fortsätta skapa.
+                </p>                     
+        </div>
+        
+
+
+    </section>
+
+    <!-- SHAPE THREE -->
+    <div class="shapeThree">
+        <svg data-name="Layer 1" viewBox="0 0 1200 320" preserveAspectRatio="none">
+            <path d="m 600 112.77 c -431.37 0 -600 -47.25 -600 -105.54 c 0 83.9233 0 167.8467 0 251.77 c 397 117 935 -86 999 -129 v -122.77 c 1 58.29 -267.63 105.54 -599 105.54 z" class="shape-fill"></path>
+
+            <defs>
+                <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
+                    <stop offset="0%" stop-color="var(--color-stop)" />
+                    <stop offset="30%" stop-color="var(--color-stop)" />
+                    <stop offset="100%" stop-color="var(--color-bot)" />
+                  </linearGradient>
+
+                  <!-- <linearGradient id="light-shape-gradient" x2="0.35" y2="1">
+                    <stop offset="0%" stop-color="var(--color-stop)" />
+                    <stop offset="30%" stop-color="var(--color-stop)" />
+                    <stop offset="100%" stop-color="var(--color-bot)" />
+                  </linearGradient> -->
+              </defs>
+              <g>
+                <polygon class="gradient-bg"/>
+              </g>
+        </svg>
+    </div>
+</section>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- PORTFOLIO -->
+    <section class="portfolioSection" id="Portfolio">
+        
+        <div class="portfolioDiv"><br>
+            <div><br>
+                <h4>Front-End</h4>
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/1s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+            
+          <!--Bild 2-->
+          <div><br>
+                <h4>Grafisk formgivning</h4>
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/2s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+    
+          <!--Bild 3-->
+          <div><br>
+                <h4>Tavlor</h4>
+                <a href="tavlor.html">
+                <img class="shadow" src="img/portfolio/tavlor/3s.jpg" alt="Bild på tavla.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="portfolioDiv"><br>
+            <div><br>
+                <h4>Front-End</h4>
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/4s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+            
+          <!--Bild 2-->
+          <div><br>
+                <h4>Grafisk formgivning</h4>
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/5s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+    
+          <!--Bild 3-->
+          <div><br>
+                <h4>Tavlor</h4>
+                <a href="tavlor.html">
+                <img class="shadow" src="img/portfolio/tavlor/6s.jpg" alt="Bild på tavla.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="portfolioDiv"><br>
+            <div><br>
+                <h4>Front-End</h4>
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/7s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+            
+          <!--Bild 2-->
+          <div><br>
+                <h4>Grafisk formgivning</h4>
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/8s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+    
+          <!--Bild 3-->
+          <div><br>
+                <h4>Tavlor</h4>
+                <a href="tavlor.html">
+                <img class="shadow" src="img/portfolio/tavlor/9s.jpg" alt="Bild på tavla.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="portfolioDiv"><br>
+            <div><br>
+                <h4>Front-End</h4>
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/10s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+            
+          <!--Bild 2-->
+          <div><br>
+                <h4>Grafisk formgivning</h4>
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/11s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+    
+          <!--Bild 3-->
+          <div><br>
+                <h4>Tavlor</h4>
+                <a href="tavlor.html">
+                <img class="shadow" src="img/portfolio/tavlor/12s.jpg" alt="Bild på tavla.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+            </div>
+        </div>
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------- -->   
+
+        <div class="portfolioDiv"><br>
+            <div><br>
+                <h4>Front-End</h4>
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/13s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+            
+          <!--Bild 2-->
+          <div><br>
+                <h4>Grafisk formgivning</h4>
+
+                <a href="grafiskt.html">
+                <img class="shadow" src="img/portfolio/tavlor/14s.jpg" alt="Bild på grafiskformgivning.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+          </div>
+    
+          <!--Bild 3-->
+          <div><br>
+                <h4>Tavlor</h4>
+                <a href="tavlor.html">
+                <img class="shadow" src="img/portfolio/tavlor/15s.jpg" alt="Bild på tavla.">
+                </a>
+                <!-- <p><i>Av: Kim Olsson</i></p> -->
+            </div>
+        </div>
+
+            <!-- UPPER SHAPES -->
+    <div class="shapeTwo">
+        <svg data-name="Layer 1" viewBox="0 0 1200 320" preserveAspectRatio="none">
+            <path d="m 600 112.77 c -431.37 0 -600 -47.25 -600 -105.54 c 0 83.9233 0 167.8467 0 251.77 c 397 117 935 -86 999 -129 v -122.77 c 1 58.29 -267.63 105.54 -599 105.54 z" class="shape-fill"></path>
+
+            <defs>
+                <linearGradient id="header-shape-gradient" x2="0.35" y2="1">
+                    <stop offset="0%" stop-color="var(--color-stop)" />
+                    <stop offset="30%" stop-color="var(--color-stop)" />
+                    <stop offset="100%" stop-color="var(--color-bot)" />
+                  </linearGradient>
+              </defs>
+              <g>
+                <polygon class="gradient-bg"/>
+              </g>
+        </svg>
+    </div>
+
+    </section>
+
+
+
+ 
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- CONTACT SECTION -->
+<section class="section" id="Contact">
+        
+    <!-- INFO SECTION -->
+    <section class="mail-section">
+
+        <!--Text-->
+        <div>
+            <h2>Kontakta mig!</h2>
+            <h3>Du når mig lättast via e-mail<h3>
+            <p>Men du kan även kontakta mig via LinkedIn.</p>           
+        </div>
+
+    </section>
+
+    
+</section>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- --------------------------------------------------------- FOOTER ----------------------------------------------------------->
+ <section>
+ <footer>
+    <div class="footerInfo">
+        <h4>Kim Olsson was here 2022 - You are here right now - I love you for beeing here</h3>
+            <!-- <p>All rights reserved, except for the right to love!</p> -->
+    </div>
+
+    <div class="footerTriangle">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+</footer>
+</section>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
